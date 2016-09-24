@@ -1,0 +1,417 @@
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 31, in <module>
+  File "core\libengine.py", line 22, in run
+    engine.start()
+  File "core\engine.py", line 28, in start
+    self.make_screen()
+  File "core\engine.py", line 51, in make_screen
+    pygame.display.set_icon(pygame.image.load("art/icons/ico.png"))
+pygame.error: Couldn't open art/icons/ico.png
+This log contains debugging and error messages from all runs.
+idle
+starting up
+quit
+This log contains debugging and error messages from all runs.
+podsixnet
+idle
+starting up
+('127.0.0.1', 54860) logged in. current players {('127.0.0.1', 54860): <astral.server.elements.Player object at 0x0275BA90>}
+Trying to authenticate with {}
+player ('127.0.0.1', 54860) ping 0.0640001296997 avg 0.0640001296997
+minimize
+('127.0.0.1', 54861) logged in. current players {('127.0.0.1', 54860): <astral.server.elements.Player object at 0x0275BA90>, ('127.0.0.1', 54861): <astral.server.elements.Player object at 0x0275BC50>}
+Trying to authenticate with {}
+player ('127.0.0.1', 54861) ping 0.0479998588562 avg 0.0479998588562
+player ('127.0.0.1', 54860) ping 0.0480000972748 avg 0.0560001134872
+delete player ('127.0.0.1', 54861)
+players {('127.0.0.1', 54860): <astral.server.elements.Player object at 0x0275BA90>}
+maximize
+quit
+This log contains debugging and error messages from all runs.
+podsixnet2
+Traceback (most recent call last):
+  File "PyWright.py", line 31, in <module>
+  File "core\libengine.py", line 42, in run
+    controller.input()
+  File "core\controller.py", line 41, in input
+    engine.world.input(self)
+  File "core\world.py", line 50, in input
+    self.action(action)
+  File "core\world.py", line 53, in action
+    self.setup_server()
+  File "core\world.py", line 63, in setup_server
+    self.engine.server.host("127.0.0.1",1337)
+  File "..\astral\server\gameserver.py", line 45, in host
+    adapter = astral.adapters.get_adapter(library,"server",protocol)
+  File "..\astral\adapters\adapters.py", line 10, in get_adapter
+    m = __import__("astral.adapters."+text,fromlist=["adapter"])
+ImportError: No module named podsixnet2
+This log contains debugging and error messages from all runs.
+podsixnet2
+Traceback (most recent call last):
+  File "PyWright.py", line 31, in <module>
+  File "core\libengine.py", line 42, in run
+    controller.input()
+  File "core\controller.py", line 41, in input
+    engine.world.input(self)
+  File "core\world.py", line 50, in input
+    self.action(action)
+  File "core\world.py", line 53, in action
+    self.setup_server()
+  File "core\world.py", line 63, in setup_server
+    self.engine.server.host("127.0.0.1",1337)
+  File "..\astral\server\gameserver.py", line 45, in host
+    adapter = astral.adapters.get_adapter(library,"server",protocol)
+  File "..\astral\adapters\adapters.py", line 10, in get_adapter
+    adapter = none
+NameError: global name 'none' is not defined
+This log contains debugging and error messages from all runs.
+podsixnet2
+Traceback (most recent call last):
+  File "PyWright.py", line 31, in <module>
+  File "core\libengine.py", line 42, in run
+    controller.input()
+  File "core\controller.py", line 41, in input
+    engine.world.input(self)
+  File "core\world.py", line 50, in input
+    self.action(action)
+  File "core\world.py", line 53, in action
+    self.setup_server()
+  File "core\world.py", line 63, in setup_server
+    self.engine.server.host("127.0.0.1",1337)
+  File "..\astral\server\gameserver.py", line 45, in host
+    adapter = astral.adapters.get_adapter(library,"server",protocol)
+  File "..\astral\adapters\adapters.py", line 17, in get_adapter
+    raise AdapterNotImplemented("No adapter implemented for %s as a %s %s"%(text,protocol,mode))
+astral.adapters.adapters.AdapterNotImplemented: No adapter implemented for podsixnet2 as a tcp server
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "C:\Users\saluk\Desktop\dev\astral\ummo\main.py", line 43, in <module>
+    libengine.run()
+  File "core\libengine.py", line 42, in run
+    controller.input()
+  File "core\controller.py", line 41, in input
+    engine.world.input(self)
+  File "core\world.py", line 50, in input
+    self.action(action)
+  File "core\world.py", line 53, in action
+    self.setup_server()
+  File "core\world.py", line 63, in setup_server
+    self.engine.server.host("127.0.0.1",1337)
+  File "..\astral\server\gameserver.py", line 44, in host
+    adapter = astral.adapters.get_adapter(library,"server",protocol)
+  File "..\astral\adapters\adapters.py", line 17, in get_adapter
+    raise AdapterNotImplemented("No adapter implemented for %s as a %s %s"%(text,protocol,mode))
+astral.adapters.adapters.AdapterNotImplemented: No adapter implemented for podsixnet as a tcp server
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 31, in <module>
+  File "core\libengine.py", line 42, in run
+    controller.input()
+  File "core\controller.py", line 41, in input
+    engine.world.input(self)
+  File "core\world.py", line 50, in input
+    self.action(action)
+  File "core\world.py", line 53, in action
+    self.setup_server()
+  File "core\world.py", line 63, in setup_server
+    self.engine.server.host("127.0.0.1",1337)
+  File "..\astral\server\gameserver.py", line 44, in host
+    adapter = astral.adapters.get_adapter(library,"server",protocol)
+  File "..\astral\adapters\adapters.py", line 12, in get_adapter
+    m = __import__("astral.adapters."+text,fromlist=["adapter"])
+  File "..\astral\adapters\podsixnet.py", line 25, in <module>
+    from astral.PodSixNet.Connection import ConnectionListener
+ImportError: No module named PodSixNet.Connection
+This log contains debugging and error messages from all runs.
+idle
+starting up
+quit
+This log contains debugging and error messages from all runs.
+idle
+starting up
+('127.0.0.1', 54936) logged in. current players {('127.0.0.1', 54936): <astral.server.elements.Player object at 0x0256BA90>}
+Trying to authenticate with {}
+player ('127.0.0.1', 54936) ping 0.0639998912811 avg 0.0639998912811
+minimize
+('127.0.0.1', 54937) logged in. current players {('127.0.0.1', 54937): <astral.server.elements.Player object at 0x0256BC50>, ('127.0.0.1', 54936): <astral.server.elements.Player object at 0x0256BA90>}
+Trying to authenticate with {}
+player ('127.0.0.1', 54937) ping 0.0480000972748 avg 0.0480000972748
+delete player ('127.0.0.1', 54937)
+players {('127.0.0.1', 54936): <astral.server.elements.Player object at 0x0256BA90>}
+maximize
+quit
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 30, in <module>
+  File "core\libengine.py", line 5, in <module>
+    import world
+  File "core\world.py", line 5, in <module>
+    import client
+  File "core\client.py", line 3, in <module>
+    import astral.client.gameclient as gc
+ImportError: No module named astral.client.gameclient
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 30, in <module>
+  File "core\libengine.py", line 5, in <module>
+    import world
+  File "core\world.py", line 5, in <module>
+    import client
+  File "core\client.py", line 3, in <module>
+    import astral.client.gameclient as gc
+ImportError: No module named astral.client.gameclient
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    from core import libengine
+  File "core\libengine.py", line 5, in <module>
+    import world
+  File "core\world.py", line 5, in <module>
+    import client
+  File "core\client.py", line 3, in <module>
+    import astral.client.gameclient as gc
+ImportError: No module named astral.client.gameclient
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 45, in <module>
+  File "core\libengine.py", line 5, in <module>
+  File "core\world.py", line 5, in <module>
+  File "core\client.py", line 3, in <module>
+ImportError: No module named astral.client.gameclient
+
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 23, in run
+AttributeError: 'module' object has no attribute 'host_or_connect'
+
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 42, in run
+  File "core\controller.py", line 9, in input
+AttributeError: Controller instance has no attribute 'state'
+
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 42, in run
+  File "core\controller.py", line 9, in input
+AttributeError: Controller instance has no attribute 'state'
+
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 42, in run
+  File "core\controller.py", line 9, in input
+AttributeError: Controller instance has no attribute 'state'
+
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+showing
+quit
+This log contains debugging and error messages from all runs.
+minimize
+maximize
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 39, in run
+AttributeError: 'NoneType' object has no attribute 'draw'
+
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 39, in run
+AttributeError: 'NoneType' object has no attribute 'draw'
+
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 22, in run
+  File "core\engine.py", line 28, in start
+  File "core\engine.py", line 51, in make_screen
+error: Unsupported image format
+
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+minimize
+maximize
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+minimize
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 41, in run
+  File "core\world.py", line 39, in make_world
+TypeError: add() got an unexpected keyword argument 'rot'
+
+This log contains debugging and error messages from all runs.
+Traceback (most recent call last):
+  File "PyWright.py", line 46, in <module>
+  File "core\libengine.py", line 53, in run
+  File "core\engine.py", line 54, in update
+  File "core\world.py", line 25, in update
+  File "core\agents.py", line 46, in update
+TypeError: 'int' object is unsubscriptable
+
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
+This log contains debugging and error messages from all runs.
+quit
